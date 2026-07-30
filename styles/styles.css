@@ -250,6 +250,20 @@ footer {
             margin: 0 auto;
             letter-spacing: 1px;
         }
+.opening-badge {
+    margin-top: 30px;
+    padding: 10px 24px;
+    border: 1px solid var(--gold);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 2px;
+}
+
 
         .offerings-list li::before {
             content: "•";
