@@ -264,6 +264,23 @@ footer {
     border-radius: 2px;
 }
 
+        .footer-email {
+            margin-bottom: 25px;
+        }
+
+        .footer-email a {
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-email a:hover {
+            color: var(--gold);
+        }
+
+
 
         .offerings-list li::before {
             content: "•";
