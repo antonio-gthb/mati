@@ -70,14 +70,13 @@ header {
     align-items: center;
 }
 
-/* New CSS class for the Hero Logo */
 .hero-logo {
     width: 100%;
     max-width: 250px;
     height: auto;
     margin-bottom: 30px;
-    border-radius: 8px; /* Optional: gives the square logo soft edges */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Optional: lifts the logo off the background */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .hero-content h1 {
@@ -92,6 +91,22 @@ header {
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
+}
+
+/* OPENING BADGE (Placed in Hero or Header context) */
+.opening-badge {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 24px;
+    border: 1px solid var(--gold);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 2px;
 }
 
 /* --- STORY SECTION --- */
@@ -125,12 +140,53 @@ header {
     margin: 40px auto;
 }
 
+/* --- OFFERINGS SECTION --- */
+.offerings-section {
+    padding: 20px 20px 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offerings-section h3 {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.offerings-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.offerings-list li {
+    font-size: 1.2rem;
+    color: #555;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+.offerings-list li::before {
+    content: "•";
+    color: var(--gold);
+    margin-right: 15px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
 /* --- IMAGE GRID --- */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5px;
-    margin-bottom: -5px; /* Offset gap at the bottom */
+    margin-bottom: -5px;
 }
 
 .image-grid img {
@@ -151,8 +207,24 @@ footer {
 .footer-address {
     font-family: var(--font-heading);
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
+}
+
+.footer-email {
+    margin-bottom: 30px;
+}
+
+.footer-email a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.footer-email a:hover {
+    color: var(--gold);
 }
 
 .social-links {
@@ -191,7 +263,7 @@ footer {
     margin: 0 auto;
 }
 
-/* --- ANIMATIONS (Triggered by JS) --- */
+/* --- ANIMATIONS --- */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -218,74 +290,3 @@ footer {
         max-width: 180px;
     }
 }
-        /* --- OFFERINGS SECTION --- */
-        .offerings-section {
-            padding: 20px 20px 100px;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .offerings-section h3 {
-            font-size: 2rem;
-            color: var(--primary-green);
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .offerings-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .offerings-list li {
-            font-size: 1.2rem;
-            color: #555;
-            position: relative;
-            display: inline-block;
-            margin: 0 auto;
-            letter-spacing: 1px;
-        }
-.opening-badge {
-    margin-top: 30px;
-    padding: 10px 24px;
-    border: 1px solid var(--gold);
-    color: var(--cream);
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-    border-radius: 2px;
-}
-
-        .footer-email {
-            margin-bottom: 25px;
-        }
-
-        .footer-email a {
-            color: var(--cream);
-            text-decoration: none;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
-        }
-
-        .footer-email a:hover {
-            color: var(--gold);
-        }
-
-
-
-        .offerings-list li::before {
-            content: "•";
-            color: var(--gold);
-            margin-right: 15px;
-            font-size: 1.5rem;
-            vertical-align: middle;
-        }
